@@ -6,6 +6,7 @@ import Logout from "./containers/Auth/Logout/Logout";
 import * as actions from "./store/actions/index";
 import { connect } from "react-redux";
 import asyncComponent from "./hoc/asyncComponent/asyncComponent";
+require("dotenv").config();
 
 const asyncCheckout = asyncComponent(() => {
   return import("./containers/Checkout/Checkout");
